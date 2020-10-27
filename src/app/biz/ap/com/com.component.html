@@ -1,0 +1,56 @@
+<div id="mapa"></div>
+
+
+<div class="modal">
+
+
+  <app-logo></app-logo>
+
+  <div class="lamp-warp">
+
+    <!--    <button nz-button nzType="primary">Primary Button</button>-->
+    <div class="lamp-item" [ngClass]="{'lamp-active':true}">
+      <i nz-icon nzType="mail" nzTheme="outline"></i>
+    </div>
+
+    <div class="lamp-item">
+      <i nz-icon nzType="stop" nzTheme="outline"></i>
+      <!--      <i nz-icon nzType="step-forward" nzTheme="outline"></i>-->
+    </div>
+
+
+    <div class="lamp-item">
+      <i nz-icon nzType="car" nzTheme="outline"></i>
+    </div>
+
+
+    <div class="lamp-item">
+      <i nz-icon nzTheme="outline">P</i>
+    </div>
+
+
+    <div class="lamp-item" style="flex: 1">
+
+    </div>
+
+
+    <div class="lamp-item">
+      <i nz-icon nzType="unlock" nzTheme="outline"></i>
+    </div>
+
+
+    <!--    <i nz-icon nzType="lock" nzTheme="outline"></i>-->
+
+  </div>
+
+
+  <div class="message-warp">
+    <p nz-typography [(nzContent)]="dis"></p>
+
+    <div class="status">
+      <h1>
+        Delay:{{delay}}ms
+      </h1>
+    </div>
+  </div>
+</div>

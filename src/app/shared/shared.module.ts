@@ -6,9 +6,12 @@ import {HttpClientModule} from '@angular/common/http';
 import {RouterModule} from '@angular/router';
 
 
+import {NgZorroAntdModule} from './zorro';
+
 @NgModule({
   declarations: [],
   imports: [
+    NgZorroAntdModule,
     RouterModule,
     CommonModule,
     FormsModule,
@@ -16,8 +19,11 @@ import {RouterModule} from '@angular/router';
     HttpClientModule,
   ],
   exports: [FormsModule,
+    RouterModule,
+    NgZorroAntdModule,
     ReactiveFormsModule,
-    HttpClientModule, CommonModule]
+    HttpClientModule,
+    CommonModule]
 })
 export class SharedModule {
 }
